@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dashboard</h1>
+    <h2>welcome, <%= user.email %> </h2>
+    <h3>your username is <%= user.username %> </h3>
+    <img src="<%= user.profilePic %>" width="150" height="150" style="border-radius:50%">
+
+    <form action="/logout" method="post">
+        <button type="submit">logout</button>
+    </form>
+</body>
+</html>

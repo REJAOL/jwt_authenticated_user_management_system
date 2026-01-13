@@ -1,0 +1,24 @@
+<!-- views/register.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Enter your username" name="username" required>
+        <input type="email" placeholder="Enter email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        
+
+        <input type="file" name="profilePic" accept="image/*">
+        
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="/">Login</a></p>
+    </form>
+</body>
+</html>
